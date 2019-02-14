@@ -19,6 +19,9 @@ public class App
     	
     	System.out.println("Employee Name:"+employeeService.getEmployee().getName());
     	Employee employee = employeeService.getEmployee();
+    	
+    	/* 3. Aspect method secondAdvice() will be executed after getEmployee().setSalary(int salary) executed.
+    	 * **/
     	employee.setSalary(35000);
     	
     	ctx.close();
