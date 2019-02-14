@@ -2,6 +2,7 @@ package com.learning.spring.spring_aop;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.learning.spring.spring_aop.model.Employee;
 import com.learning.spring.spring_aop.services.EmployeeService;
 
 public class App 
@@ -15,7 +16,12 @@ public class App
     	 * 2. Aspect method getAllAdvice will be executed for each method with prefix get on 
     	 *    package com.learning.spring.spring_aop.services executed.
     	 * **/
+    	//Employee employee = ;
     	System.out.println("Employee Name:"+employeeService.getEmployee().getName());
+    	//employee.setSalary(25000);
+    	
+    	ctx.close();
+    
        
     }
 }
