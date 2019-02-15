@@ -23,6 +23,7 @@ public class App
     	/* 3. Aspect method secondAdvice() will be executed after getEmployee().setSalary(int salary) executed.
     	 * **/
     	employee.setSalary(35000);
+    	System.out.println("Salary for employe "+ employee.getName() +" is "+employee.getSalary());
     	
     	ctx.close();
     
